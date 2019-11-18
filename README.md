@@ -55,3 +55,8 @@ Run `flutter doctor` (now hopefully all warning will be removed)
 ###### 2. `yarn install` / `npm install`
 ###### 3. `flutter run`
 
+
+
+# Ridss Quiz App
+
+#### Happy Flutter :smile: :smile:
