@@ -65,6 +65,6 @@ Run `flutter doctor` (now hopefully all warning will be removed)
 
 :link: https://vimeo.com/373906773
 
-# Ridss Todo App
+# Flutter with Rest Apis
 
 #### Happy Flutter :smile: :smile:

@@ -1,1 +1,0 @@
-# ridss_todo_app
