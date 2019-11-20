@@ -16,7 +16,7 @@ class LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Sample'),
+          title: Text('Ridss Sample For Flutter with Api Integration'),
         ),
         body: Padding(
             padding: const EdgeInsets.all(32.0),
