@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import './login.dart';
 
-
 void main() => runApp(MyApp());
+
+class Url {
+  static const BASE_API_URL = "https://jsonplaceholder.typicode.com";
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
