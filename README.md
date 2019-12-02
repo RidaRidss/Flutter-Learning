@@ -54,6 +54,20 @@ Run `flutter doctor` (now hopefully all warning will be removed)
 ###### 1. `flutter create app_name`
 ###### 2. `yarn install` / `npm install`
 ###### 3. `flutter run`
+###### 4. `Happy Coding with VS Code`
+###### 4.1 `Install Extension`
+
+###### 4.2 `Tips & Trics  ☺️ ☺️ ☺️ ☺️ ☺️ ☺️ ☺️ 
+
+`The Flutter extension includes the following snippets:`
+`Prefix stless: Create a new subclass of StatelessWidget.`
+`Prefix stful: Create a new subclass of StatefulWidget and its associated State subclass.`
+`Prefix stanim: Create a new subclass of StatefulWidget, and its associated State subclass including a field initialized with an AnimationController.`
+`You can also define custom snippets by executing Configure User Snippets from the Command Palette.` 
+ 😜  😜  😜 
+
+
+
 
 
 
