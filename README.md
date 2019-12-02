@@ -60,11 +60,17 @@ Run `flutter doctor` (now hopefully all warning will be removed)
 ###### 4.2 `Tips & Trics  ☺️ ☺️ ☺️ ☺️ ☺️ ☺️ ☺️ 
 
 `The Flutter extension includes the following snippets:`
-`Prefix stless: Create a new subclass of StatelessWidget.`
-`Prefix stful: Create a new subclass of StatefulWidget and its associated State subclass.`
-`Prefix stanim: Create a new subclass of StatefulWidget, and its associated State subclass including a field initialized with an AnimationController.`
-`You can also define custom snippets by executing Configure User Snippets from the Command Palette.` 
- 😜  😜  😜 
+
+1. `Prefix stless: Create a new subclass of StatelessWidget.`
+
+2. `Prefix stful: Create a new subclass of StatefulWidget and its associated State subclass.`
+
+3. `Prefix stanim: Create a new subclass of StatefulWidget, and its associated State subclass including a field initialized with an AnimationController.`
+
+4. `You can also define custom snippets by executing Configure User Snippets from the Command Palette.` 
+
+
+  😄  ❤️  👌  👍 
 
 
 
