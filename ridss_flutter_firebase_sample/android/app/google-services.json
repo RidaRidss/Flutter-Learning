@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "125082962280",
+    "firebase_url": "https://happy-flutter-firebase.firebaseio.com",
+    "project_id": "happy-flutter-firebase",
+    "storage_bucket": "happy-flutter-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125082962280:android:6c5c4333eaa890fc56aedd",
+        "android_client_info": {
+          "package_name": "com.example.ridss_flutter_firebase_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125082962280-1dkkvdjdtf7c20eu9bcas1h17nf8ijfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ridss_flutter_firebase_sample",
+            "certificate_hash": "1555bcf94d4c82a6c19ccf414bb8e508da8b9c36"
+          }
+        },
+        {
+          "client_id": "125082962280-n7t8ioiaqrl5tdsfts8m7l23ne0c6f0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN-MV8Zk9aeQK-hsFCOdoqekOM2X-70sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125082962280-n7t8ioiaqrl5tdsfts8m7l23ne0c6f0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
