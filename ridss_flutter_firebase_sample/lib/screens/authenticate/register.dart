@@ -2,27 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:ridss_flutter_firebase_sample/services/auth.dart';
 import 'package:ridss_flutter_firebase_sample/shared/constants.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   // this statefull widget will receive a method toggleView from its parent class , definition is written below
-
   final Function toggleView;
+// registry is written below for the above method for this class
 
-  // registry is written below for the above method for this class
-
-  SignIn({this.toggleView});
+  Register({this.toggleView});
 
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
 
   // get the input forms key by value by initializing a variable "_formKey" for the form keys for this class
 
   final _formKey = GlobalKey<FormState>();
 
-// textfield state
+  // textfield state
 
   String email = '';
   String password = '';
@@ -34,8 +32,8 @@ class _SignInState extends State<SignIn> {
       backgroundColor: Colors.brown[100],
       appBar: AppBar(
         backgroundColor: Colors.pinkAccent[200],
-        elevation: 4.0,
-        title: Text('SignIn To FlutterFire'),
+        elevation: 0.0,
+        title: Text('Register To FlutterFire'),
         actions: <Widget>[
           FlatButton.icon(
             icon: Icon(
@@ -43,7 +41,7 @@ class _SignInState extends State<SignIn> {
               color: Colors.white,
             ),
             label: Text(
-              'Register',
+              'Sign In',
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {
@@ -55,12 +53,13 @@ class _SignInState extends State<SignIn> {
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
+          // add the variable in key property of form , so that we can validate the field values inside the form
           key: _formKey,
           child: Column(
             children: <Widget>[
               SizedBox(height: 20.0),
               TextFormField(
-                  // add some decoration for this field
+                  // add some field decoration
                   decoration: textInputDecoration.copyWith(hintText: 'EMAIL'),
                   // add the validator property for this form field
                   validator: (val) => val.isEmpty ? 'ENTER AN EMAIL' : null,
@@ -70,34 +69,33 @@ class _SignInState extends State<SignIn> {
                   }),
               SizedBox(height: 20.0),
               TextFormField(
-                  // add some decoration for this field
+                  // add some field decoration
                   decoration:
                       textInputDecoration.copyWith(hintText: 'PASSWORD'),
-                  // this "obcureText" proverty is used to hide the writing letters in text field
-                  obscureText: true,
                   // add the validator property for this form field
                   validator: (val) => val.length > 6
                       ? 'ENTER PASSWORD 6 CHARACTERS LONG'
                       : null,
+                  // this "obcureText" proverty is used to hide the writing letters in text field
+                  obscureText: true,
                   // set screen state for password here
                   onChanged: (val) {
                     setState(() => password = val);
                   }),
               SizedBox(height: 20.0),
               RaisedButton(
-                  color: Colors.pink[400],
-                  child: Text('Sign In', style: TextStyle(color: Colors.white)),
-                  onPressed: () async {
-                    // here we are validating the form fields on press
-                    if (_formKey.currentState.validate()) {
-                      dynamic result =
-                          await _auth.signInWithEmailNPassword(email, password);
-                      if (result == null) {
-                        setState(() => error =
-                            'Could not sign in with those credentials.');
-                      }
-                    }
-                  })
+                color: Colors.pink[400],
+                child: Text('Submit', style: TextStyle(color: Colors.white)),
+                onPressed: () async {
+                  // here we are validating the form fields on press
+                  if (_formKey.currentState.validate()) {
+                    print(email);
+                    print(password);
+                  }
+                },
+              ),
+              SizedBox(height: 12.0),
+              Text(error, style: TextStyle(color: Colors.red, fontSize: 14.0))
             ],
           ),
         ),

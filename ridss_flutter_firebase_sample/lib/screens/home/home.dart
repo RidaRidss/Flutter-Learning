@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 appBar: AppBar(
-  title: Text('Ridss Flutter Firebase Sample'),
+  title: Text('FlutterFire'),
   backgroundColor: Colors.brown[400],
   elevation: 0.0,
   actions: <Widget>[
